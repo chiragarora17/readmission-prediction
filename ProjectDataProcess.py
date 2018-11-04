@@ -50,8 +50,6 @@ print len(uniqueColVals)
 for index,row in dataFrameX.iterrows():
     if(index==0 ):
         continue
-    elif index > 20:
-        break
     else:
         for i,col in enumerate(uniqueColVals):
             for key,val in col.items():
