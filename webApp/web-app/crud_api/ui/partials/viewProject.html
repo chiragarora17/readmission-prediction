@@ -1,0 +1,37 @@
+<!-- Contact Section -->
+<section id="create">
+    <div class="container">
+      <h6>Project Details</h6>
+<table class="table table-striped">
+  <tr><td>Project Name</td><td><span class="label label-info">{{projectData.response[1]}}</span></td></tr>
+  <tr><td>URL</td><td><span class="label label-info">{{projectData.response[2]}}</span></td></tr>
+  <tr><td>Topic</td><td><span class="label label-info">{{projectData.response[3]}}</span></td></tr>
+  <tr><td>Webhook Setup</td><td>
+    1. Go to your github project settings.<br/>
+    2. Click on webhook tab/pane.<br/>
+    3. Add following entries.<br/>
+    <img src="ui/img/webhook.jpeg"></img>
+  </td></tr>
+  <tr><td>Setup IoT device</td><td>
+    1. Download the zip folder <a href="ui/agent-scripts/agent.zip" target="_blank"><span class="label label-warning">Download</span></a><br/>
+    2. Unzip the folder in your iot device.<br/>
+    3. Open & edit following parameters in the file agent-listener.py <br/>
+    <div class="jumbotron">
+      TOPIC='{{projectData.response[3]}}'<br/>
+      GIT_URL="{{projectData.response[2]}}"</br>
+    </div>
+    2. Execute the following command:<br/>
+    <div class="jumbotron">
+      sh start-agent.sh
+    </div>
+    3. Test your application.<br/>
+
+
+
+  </td></tr>
+
+
+</table>
+
+</div>
+</section>
