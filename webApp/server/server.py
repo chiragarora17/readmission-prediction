@@ -11,22 +11,10 @@ def hello():
     return "Hello from Dockerized Flask App!!"
 
 
-# def getTopic(gitUrl):
-#     ds = DataService();
-#     result = ds.get_topic(gitUrl);
-#     print '**********'
-#     print result
-#     return result
 
-
-# @app.route("/v1/git-updates", methods=['POST'])
-# def deploy_app():
-#     request_json=request.get_json()
-#     repository=request_json['repository']
-#     git_url=repository['url']
-#     topic = getTopic(git_url)
-#     publisher.publish(topic)
-#     return "sent-update"
+@app.route("/loadModel", methods=['POST'])
+def loadModel():
+	#TODO Write model code here
 
 
 

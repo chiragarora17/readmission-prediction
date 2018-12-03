@@ -18,6 +18,15 @@ def index():
 def file(path):
    return send_from_directory("ui",path)
 
+@app.route('/getPredication')
+def getPredication(path):
+	#TODO : on submit this method will be called.
 
+	return send_from_directory("server",path)
+
+
+def preprocessData(data):
+	# TODO : process the data to map to model
+	
 if __name__ == "__main__":
 	app.run(debug=True,host='0.0.0.0',port=3005)
