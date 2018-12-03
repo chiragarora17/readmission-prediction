@@ -66,14 +66,3 @@ admission_source_id,description
 24, Born outside this hospital
 25, Transfer from Ambulatory Surgery Center
 26,Transfer from Hospice
-age_group,description
-1,[0-10)
-2,[10-20)
-3,[20-30)
-4,[30-40)
-5,[40-50)
-6,[50-60)
-7,[60-70)
-8,[70-80)
-9,[80-90)
-10,[90-100)
