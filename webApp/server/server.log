@@ -1,12 +1,133 @@
- * Running on http://0.0.0.0:3007/ (Press CTRL+C to quit)
+ * Serving Flask app "Api" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://localhost:5005/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 376-701-495
-130.65.254.7 - - [03/May/2017 23:10:55] "GET / HTTP/1.1" 200 -
-130.65.254.7 - - [03/May/2017 23:10:55] "GET /favicon.ico HTTP/1.1" 404 -
-192.30.252.42 - - [03/May/2017 23:12:48] "POST /v1/git-updates HTTP/1.1" 200 -
-192.30.252.45 - - [03/May/2017 23:30:34] "POST /v1/git-updates HTTP/1.1" 200 -
-192.30.252.42 - - [03/May/2017 23:34:39] "POST /v1/git-updates HTTP/1.1" 200 -
-192.30.252.40 - - [03/May/2017 23:40:17] "POST /v1/git-updates HTTP/1.1" 200 -
-192.30.252.34 - - [03/May/2017 23:43:52] "POST /v1/git-updates HTTP/1.1" 200 -
-192.30.252.41 - - [03/May/2017 23:45:06] "POST /v1/git-updates HTTP/1.1" 200 -
+ * Debugger PIN: 280-723-183
+127.0.0.1 - - [02/Dec/2018 23:39:14] "POST /api/v1/predict HTTP/1.1" 201 -
+127.0.0.1 - - [02/Dec/2018 23:41:15] "POST /api/v1/predict HTTP/1.1" 201 -
+ * Detected change in '/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/FrontDCModel.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-723-183
+ * Detected change in '/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/Api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-723-183
+127.0.0.1 - - [02/Dec/2018 23:41:52] "POST /api/v1/predict HTTP/1.1" 201 -
+ * Detected change in '/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/Api.py', reloading
+[[ 3  0 14 -1  1 -1  3 59  0 18  0  0  0  3  3  3  9 -1 -1  1  1  1  1  1
+   1  1  1  1  1  1  1  1  1  1  3  1  1  1  1  1  0  1]]
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-723-183
+ * Detected change in '/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/FrontDCModel.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-723-183
+ * Detected change in '/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/Api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-723-183
+127.0.0.1 - - [02/Dec/2018 23:46:36] "POST /api/v1/predict HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask_restful/__init__.py", line 273, in error_router
+    return original_handler(e)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask_restful/__init__.py", line 273, in error_router
+    return original_handler(e)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/Api.py", line 17, in post
+    res = model.predict(data)
+  File "/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/FrontDCModel.py", line 108, in predict
+    arr = preprocess(data)
+  File "/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/FrontDCModel.py", line 177, in preprocess
+    if (value.isdigit()):
+AttributeError: 'int' object has no attribute 'isdigit'
+ * Detected change in '/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/FrontDCModel.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-723-183
+ * Detected change in '/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/Api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-723-183
+127.0.0.1 - - [02/Dec/2018 23:49:22] "POST /api/v1/predict HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask_restful/__init__.py", line 273, in error_router
+    return original_handler(e)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask_restful/__init__.py", line 273, in error_router
+    return original_handler(e)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask_restful/__init__.py", line 480, in wrapper
+    resp = resource(*args, **kwargs)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask/views.py", line 88, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/Users/carora/anaconda3/lib/python3.6/site-packages/flask_restful/__init__.py", line 595, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/Api.py", line 17, in post
+    res = model.predict(data)
+  File "/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/FrontDCModel.py", line 108, in predict
+    arr = preprocess(data)
+  File "/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/FrontDCModel.py", line 177, in preprocess
+    if (value.isdigit() or isinstance(value, int)):
+AttributeError: 'int' object has no attribute 'isdigit'
+ * Detected change in '/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/FrontDCModel.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-723-183
+ * Detected change in '/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/Api.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-723-183
+127.0.0.1 - - [02/Dec/2018 23:50:56] "POST /api/v1/predict HTTP/1.1" 201 -
+ * Detected change in '/Users/carora/Documents/sjsu/cmpe255/project/CMPE255-Project/webApp/server/FrontDCModel.py', reloading
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 280-723-183
